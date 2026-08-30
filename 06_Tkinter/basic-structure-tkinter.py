@@ -14,6 +14,7 @@ import tkinter as tk
 root = tk.Tk()
 root.title("My First Tkinter App")
 label = tk.Label(root, text="Hello, Myself suhan khan k!")
+root.minsize(400,300)
 label.pack()
 root.mainloop()
 print("Application closed.")
