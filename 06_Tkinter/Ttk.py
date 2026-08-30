@@ -1,9 +1,10 @@
 import tkinter as tk
+from tkinter import ttk
 window = tk.Tk()
 window.title("Tkinter App") # title
 
 #label
-label = tk.Label(window, text="Hello World", font=("Times New Romen", 20, "bold"))
+label = ttk.Label(window, text="Hello World", font=("Times New Romen", 20, "bold"))
 label.pack()
 
 # window size
@@ -15,14 +16,14 @@ def button():
     label.config(text=user_text)
 
 # user input
-user_input = tk.Entry()
+user_input = ttk.Entry()
 user_input.pack()
 
 #button
-button = tk.Button(text="click", command=button)
+button = ttk.Button(text="click", command=button)
 button.pack()
 
 #quitting
-quit = tk.Button(text="quit", command=window.destroy)
+quit = ttk.Button(text="quit", command=window.destroy)
 quit.pack()
 window.mainloop()
